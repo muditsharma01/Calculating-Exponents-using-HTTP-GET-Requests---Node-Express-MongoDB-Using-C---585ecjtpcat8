@@ -21,7 +21,7 @@ const server = http.createServer((req, res) => {
         // Check if num1 is a positive integer
         if (!Number.isInteger(value1) || value1 <= 0) {
           res.writeHead(404, { 'Content-Type': 'text/plain' });
-          res.end('The operation cannot be performed.');
+          res.end('The operation cannot be performed');
           return;
         }
 
